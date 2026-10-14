@@ -1,0 +1,869 @@
+{
+  "schema": "anticloud.bench17/1",
+  "project": "TANTIVY",
+  "category": "SEARCH_ENGINES",
+  "run_timestamp_utc": "2026-10-05T14:28:56Z",
+  "runner": "E:/opencode-work/tier_agents/_tools/bl_common.py + bl_run.py",
+  "clone_dir_name": "UPSTREAM_CLONE",
+  "clone_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\SEARCH_ENGINES\\TANTIVY\\UPSTREAM_CLONE",
+  "excluded_by_policy": [
+    "all AI/LLM latency and throughput benchmarks",
+    "no model downloaded; pytorch/torch/transformers never imported"
+  ],
+  "status": "BENCHMARKED",
+  "benchmarks": {
+    "01_loc_file_counts": {
+      "status": "MEASURED",
+      "total_files_in_tree": 448,
+      "walk_truncated_at_cap": false,
+      "source_and_doc_files_counted": 424,
+      "files_skipped_over_4mb": 0,
+      "total_loc": 135597,
+      "blank_lines": 15063,
+      "comment_lines": 16,
+      "sloc_estimate": 135581,
+      "primary_language": "Rust",
+      "primary_language_loc": 131159,
+      "languages": [
+        {
+          "language": "Rust",
+          "loc": 131159,
+          "files": 398
+        },
+        {
+          "language": "Text",
+          "loc": 2815,
+          "files": 1
+        },
+        {
+          "language": "Markdown",
+          "loc": 1618,
+          "files": 24
+        },
+        {
+          "language": "Make",
+          "loc": 5,
+          "files": 1
+        }
+      ],
+      "files_by_extension": {
+        ".rs": 398,
+        ".md": 24,
+        ".mk": 1,
+        ".txt": 1
+      },
+      "method": "physical line count of every code/doc file in the real clone"
+    },
+    "02_licence_detection": {
+      "status": "MEASURED",
+      "id": "MIT",
+      "file": "LICENSE",
+      "confidence": "high",
+      "text_bytes": 1099,
+      "sha256": "acacd14bebbffdb3",
+      "copyright_years": [
+        "2018"
+      ],
+      "copyright_holders": [],
+      "non_commercial_signal": null,
+      "licence_class": "A",
+      "class_basis": "MIT verified in LICENSE",
+      "class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+      "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+      "packaging_declarations": [
+        {
+          "id": "MIT",
+          "file": "Cargo.toml",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "bitpacker/Cargo.toml",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "columnar/Cargo.toml",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "common/Cargo.toml",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "jitexpr/Cargo.toml",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "ownedbytes/Cargo.toml",
+          "kind": "packaging_metadata"
+        }
+      ],
+      "licence_files_examined": [
+        {
+          "file": "LICENSE",
+          "bytes": 1099,
+          "kind": "licence_text"
+        },
+        {
+          "file": "Cargo.toml",
+          "bytes": 6019,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "jitexpr/LICENSE",
+          "bytes": 1099,
+          "kind": "licence_text"
+        },
+        {
+          "file": "bitpacker/Cargo.toml",
+          "bytes": 719,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "columnar/Cargo.toml",
+          "bytes": 1365,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "common/Cargo.toml",
+          "bytes": 811,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "jitexpr/Cargo.toml",
+          "bytes": 457,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "ownedbytes/Cargo.toml",
+          "bytes": 505,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "query-grammar/Cargo.toml",
+          "bytes": 569,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "columnar/columnar-cli-inspect/Cargo.toml",
+          "bytes": 371,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "columnar/columnar-cli/Cargo.toml",
+          "bytes": 307,
+          "kind": "packaging_metadata"
+        }
+      ],
+      "licence_files_examined_count": 11,
+      "default_rule": "unknown or absent licence = class C, never A",
+      "method": "licence text read from the tree and matched against the SPDX-style grant text"
+    },
+    "03_dependency_scan": {
+      "status": "MEASURED",
+      "manifests": [
+        {
+          "manifest": "Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 100,
+          "sample": [
+            "aho-corasick",
+            "arc-swap",
+            "authors",
+            "base64",
+            "binggan",
+            "bitpacking",
+            "bon",
+            "byteorder",
+            "categories",
+            "census",
+            "columnar",
+            "columnar-zstd-compression",
+            "common",
+            "compare_hash_only",
+            "crc32fast",
+            "criterion",
+            "crossbeam-channel",
+            "datasketches",
+            "debug",
+            "debug-assertions",
+            "default",
+            "description",
+            "documentation",
+            "downcast-rs",
+            "edition"
+          ]
+        },
+        {
+          "manifest": "Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "bitpacker/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 16,
+          "sample": [
+            "authors",
+            "binggan",
+            "bitpacking",
+            "categories",
+            "description",
+            "documentation",
+            "edition",
+            "harness",
+            "homepage",
+            "keywords",
+            "license",
+            "name",
+            "proptest",
+            "rand",
+            "repository",
+            "version"
+          ]
+        },
+        {
+          "manifest": "columnar/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 22,
+          "sample": [
+            "binggan",
+            "categories",
+            "common",
+            "description",
+            "downcast-rs",
+            "edition",
+            "fastdivide",
+            "harness",
+            "homepage",
+            "itertools",
+            "license",
+            "more-asserts",
+            "name",
+            "proptest",
+            "rand",
+            "repository",
+            "serde",
+            "sstable",
+            "stacker",
+            "tantivy-bitpacker",
+            "version",
+            "zstd-compression"
+          ]
+        },
+        {
+          "manifest": "columnar/columnar-cli/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 9,
+          "sample": [
+            "columnar",
+            "debug",
+            "edition",
+            "license",
+            "members",
+            "name",
+            "serde_json",
+            "serde_json_borrow",
+            "version"
+          ]
+        },
+        {
+          "manifest": "columnar/columnar-cli-inspect/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 9,
+          "sample": [
+            "columnar",
+            "common",
+            "debug",
+            "edition",
+            "license",
+            "members",
+            "name",
+            "tantivy",
+            "version"
+          ]
+        },
+        {
+          "manifest": "common/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 17,
+          "sample": [
+            "async-trait",
+            "authors",
+            "binggan",
+            "byteorder",
+            "description",
+            "documentation",
+            "edition",
+            "homepage",
+            "license",
+            "name",
+            "ownedbytes",
+            "proptest",
+            "rand",
+            "repository",
+            "serde",
+            "time",
+            "version"
+          ]
+        },
+        {
+          "manifest": "jitexpr/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 15,
+          "sample": [
+            "cranelift",
+            "cranelift-jit",
+            "cranelift-module",
+            "cranelift-native",
+            "description",
+            "edition",
+            "homepage",
+            "license",
+            "lru",
+            "name",
+            "proptest",
+            "regex",
+            "repository",
+            "thiserror",
+            "version"
+          ]
+        },
+        {
+          "manifest": "ownedbytes/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 10,
+          "sample": [
+            "authors",
+            "description",
+            "documentation",
+            "edition",
+            "homepage",
+            "license",
+            "name",
+            "repository",
+            "stable_deref_trait",
+            "version"
+          ]
+        },
+        {
+          "manifest": "query-grammar/Cargo.toml",
+          "ecosystem": "crates.io",
+          "declared": 16,
+          "sample": [
+            "authors",
+            "categories",
+            "description",
+            "edition",
+            "fnv",
+            "homepage",
+            "keywords",
+            "license",
+            "name",
+            "nom",
+            "ordered-float",
+            "readme",
+            "repository",
+            "serde",
+            "serde_json",
+            "version"
+          ]
+        }
+      ],
+      "manifest_count": 10,
+      "ecosystems": {
+        "crates.io": 214,
+        "make": 0
+      },
+      "declared_packages_total": 214,
+      "lockfiles_on_disk": [],
+      "lockfile_count": 0,
+      "reproducible_build_evidence": false,
+      "method": "manifests parsed from the real tree"
+    },
+    "04_sbom": {
+      "status": "MEASURED",
+      "format": "CycloneDX 1.5",
+      "component_count": 64,
+      "components_with_purl": 64,
+      "artifact": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\SEARCH_ENGINES\\TANTIVY\\sbom\\sbom.cdx.json",
+      "serial_number": "urn:uuid:a4ade6ad-0000-0000-4000-0dfa641f1c9f",
+      "licence_asserted_in_sbom": "MIT",
+      "licence_class_in_sbom": "A",
+      "method": "dependency manifests actually present in the working tree; zero imports invented"
+    },
+    "05_git_health": {
+      "status": "MEASURED",
+      "is_git_clone": true,
+      "head_sha": "45bbb16542f157a099585bc988ce7f06e7b4fd5a",
+      "head_short": "45bbb16542f1",
+      "head_date": "2026-10-05T15:13:44+02:00",
+      "head_subject": "Refactoring to make ValueSource::load_block take &mut self (#3147)",
+      "head_author": "Paul Masurel <paul@quickwit.io>",
+      "remote_url": "https://github.com/quickwit-oss/tantivy",
+      "is_shallow": true,
+      "commits_in_clone": 1,
+      "tracked_files": 0,
+      "local_and_remote_branches": 3,
+      "tags": 0,
+      "working_tree_dirty_entries": 634,
+      "ci_config": [
+        ".github/workflows (coverage.yml,long_running.yml,scorecard.yml,test.yml)"
+      ],
+      "ci_present": true,
+      "method": "git plumbing run against the on-disk repo"
+    },
+    "06_security_config_owasp_llm_top10": {
+      "status": "MEASURED",
+      "upstream_security_files": 2,
+      "project_security_files": 123,
+      "total_evidence_files": 125,
+      "upstream_examples": [
+        "SECURITY.md",
+        "src/query/fuzzy_query.rs"
+      ],
+      "project_examples": [
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.docx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.html",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pdf",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pptx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt"
+      ],
+      "llm_specific_artifacts": [],
+      "method": "inventory of real security/audit/threat artefacts in clone and Anticommons folder"
+    },
+    "07_security_config_owasp_top10": {
+      "status": "MEASURED",
+      "evidence_file_count": 21,
+      "files": [
+        "OFFICIAL_BENCHMARKS/03_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.docx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.html",
+        "OFFICIAL_BENCHMARKS/05_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pdf",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pptx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.txt",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.docx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.html",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.json",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.md",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.txt",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.docx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.html",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.json",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.md",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.txt"
+      ],
+      "note": "OWASP Top 10 coverage is evidenced by security policy and audit artefacts that exist on disk; absent files are reported as absent, never asserted"
+    },
+    "08_soc1": {
+      "status": "MEASURED",
+      "control_family": "soc1",
+      "evidence_file_count": 5,
+      "evidence_score": 15,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/03_SOC1.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc1",
+        "soc1",
+        "soc1"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "09_soc2_typeii": {
+      "status": "MEASURED",
+      "control_family": "soc2_typeii",
+      "evidence_file_count": 8,
+      "evidence_score": 33,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.json",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.txt",
+        "OFFICIAL_BENCHMARKS/02_SOC2.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "10_nist_ai_rmf": {
+      "status": "MEASURED",
+      "control_family": "nist_ai_rmf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.json",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.md",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.txt",
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt"
+      ],
+      "matched_tokens_top": [
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "11_nist_sp800_53": {
+      "status": "MEASURED",
+      "control_family": "nist_sp800_53",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.json",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.md",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.txt"
+      ],
+      "matched_tokens_top": [
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "12_nist_csf": {
+      "status": "MEASURED",
+      "control_family": "nist_csf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.json",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.md",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.txt",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.md",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.txt",
+        "15_DISASTER_RECOVERY/README.md"
+      ],
+      "matched_tokens_top": [
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "13_fedramp": {
+      "status": "MEASURED",
+      "control_family": "fedramp",
+      "evidence_file_count": 8,
+      "evidence_score": 24,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.json",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.md",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.txt"
+      ],
+      "matched_tokens_top": [
+        "fedramp",
+        "fedramp",
+        "fedramp"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "14_pci_dss": {
+      "status": "MEASURED",
+      "control_family": "pci_dss",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.json",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.md",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.txt"
+      ],
+      "matched_tokens_top": [
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "15_iso27001": {
+      "status": "MEASURED",
+      "control_family": "iso27001",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.json",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.md",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.txt"
+      ],
+      "matched_tokens_top": [
+        "iso_27001",
+        "iso_27001",
+        "iso_27001"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "16_mitre_attack_mapping": {
+      "status": "MEASURED",
+      "control_family": "mitre_attack",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.json",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.md",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.txt"
+      ],
+      "matched_tokens_top": [
+        "mitre",
+        "mitre",
+        "mitre"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "17_ml_trl_readiness": {
+      "status": "MEASURED",
+      "framework": "Lavin, Weidner & Claus, 'Quantifying the maturity of machine learning for life sciences', Nature Methods 19, 1036-1039 (2022); TRL scale adapted for software/engineering artefacts",
+      "trl_level": 4,
+      "trl_scale": "1 = basic R&D idea; 9 = actual system proven in successful operations",
+      "level_reasons": [
+        "source tree present (design realised in code)",
+        "test files present (component validation)"
+      ],
+      "evidence": {
+        "test_files": 16,
+        "test_examples": [
+          "columnar/columnar-cli-inspect/src/main.rs",
+          "columnar/src/compat_tests.rs",
+          "columnar/src/tests.rs",
+          "columnar/src/columnar/merge/tests.rs",
+          "columnar/src/column_index/optional_index/tests.rs",
+          "columnar/src/column_index/optional_index/set_block/tests.rs",
+          "columnar/src/column_values/u64_based/tests.rs",
+          "src/compat_tests.rs"
+        ],
+        "source_files": 6,
+        "source_examples": [
+          ".gitignore",
+          "AUTHORS",
+          "LICENSE",
+          "Makefile",
+          "doc/.gitignore",
+          "jitexpr/LICENSE"
+        ],
+        "packaging_manifests": 0,
+        "packaging_examples": [],
+        "deployment_files": 0,
+        "deployment_examples": [],
+        "documentation_files": 24,
+        "documentation_examples": [
+          "ARCHITECTURE.md",
+          "CHANGELOG.md",
+          "README.md",
+          "RELEASE.md",
+          "SECURITY.md",
+          ".claude/skills/rationalize-deps/SKILL.md"
+        ],
+        "ci_config": [
+          ".github/workflows (coverage.yml,long_running.yml,scorecard.yml,test.yml)"
+        ],
+        "sbom_artifact": true,
+        "security_policy_files": 125,
+        "security_policy_examples": [
+          "SECURITY.md",
+          "src/query/fuzzy_query.rs"
+        ]
+      },
+      "measured_from": "the cloned working tree file inventory, not from any project self-claim"
+    },
+    "00_shape_k_graphrag": {
+      "status": "PASS",
+      "checks_present": [
+        "01_loc_file_counts",
+        "02_licence_detection",
+        "03_dependency_scan",
+        "04_sbom",
+        "05_git_health",
+        "06_security_config_owasp_llm_top10",
+        "07_security_config_owasp_top10",
+        "08_soc1",
+        "09_soc2_typeii",
+        "10_nist_ai_rmf",
+        "11_nist_sp800_53",
+        "12_nist_csf",
+        "13_fedramp",
+        "14_pci_dss",
+        "15_iso27001",
+        "16_mitre_attack_mapping",
+        "17_ml_trl_readiness"
+      ],
+      "check_count": 17,
+      "required_15_present": true,
+      "mitre_present": true,
+      "trl_present": true,
+      "no_ai_latency_bench": true,
+      "no_torch_import": true,
+      "shape": "K_GRAPHRAG",
+      "threshold_source": "structural (check count and presence), never lowered",
+      "wall_seconds": 98.3
+    }
+  },
+  "source_anchors_read": {
+    "entry_points": [
+      "columnar/columnar-cli/src/main.rs",
+      "columnar/columnar-cli-inspect/src/main.rs"
+    ],
+    "src_dirs": [
+      ".gitignore",
+      "AUTHORS",
+      "LICENSE",
+      "Makefile",
+      "doc/.gitignore",
+      "jitexpr/LICENSE"
+    ],
+    "tests": [
+      "columnar/columnar-cli-inspect/src/main.rs",
+      "columnar/src/compat_tests.rs",
+      "columnar/src/tests.rs",
+      "columnar/src/columnar/merge/tests.rs",
+      "columnar/src/column_index/optional_index/tests.rs",
+      "columnar/src/column_index/optional_index/set_block/tests.rs",
+      "columnar/src/column_values/u64_based/tests.rs",
+      "src/compat_tests.rs",
+      "src/functional_test.rs",
+      "src/aggregation/agg_tests.rs",
+      "src/aggregation/value_source/tests.rs",
+      "src/collector/tests.rs",
+      "src/core/tests.rs",
+      "src/directory/tests.rs",
+      "src/indexer/merger_sorted_index_test.rs",
+      "src/query/seek_danger_tests.rs"
+    ],
+    "deployment": [],
+    "build": [
+      "Makefile"
+    ],
+    "docs": [
+      "ARCHITECTURE.md",
+      "CHANGELOG.md",
+      "README.md",
+      "RELEASE.md",
+      "SECURITY.md",
+      ".claude/skills/rationalize-deps/SKILL.md",
+      ".claude/skills/simple-pr/SKILL.md",
+      ".claude/skills/update-changelog/SKILL.md",
+      "columnar/README.md",
+      "columnar/src/TODO.md",
+      "doc/src/avant-propos.md",
+      "doc/src/basis.md",
+      "doc/src/examples.md",
+      "doc/src/facetting.md",
+      "doc/src/faq.md",
+      "doc/src/index_sorting.md",
+      "doc/src/innerworkings.md",
+      "doc/src/inverted_index.md",
+      "doc/src/json.md",
+      "doc/src/schema.md",
+      "doc/src/SUMMARY.md",
+      "jitexpr/README.md",
+      "query-grammar/README.md",
+      "src/aggregation/README.md"
+    ],
+    "config": []
+  },
+  "licence_class": "A",
+  "licence_id": "MIT",
+  "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+  "licence_class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+  "wall_seconds": 98.3,
+  "check_summary": {
+    "01_loc_file_counts": "MEASURED",
+    "02_licence_detection": "MEASURED",
+    "03_dependency_scan": "MEASURED",
+    "04_sbom": "MEASURED",
+    "05_git_health": "MEASURED",
+    "06_security_config_owasp_llm_top10": "MEASURED",
+    "07_security_config_owasp_top10": "MEASURED",
+    "08_soc1": "MEASURED",
+    "09_soc2_typeii": "MEASURED",
+    "10_nist_ai_rmf": "MEASURED",
+    "11_nist_sp800_53": "MEASURED",
+    "12_nist_csf": "MEASURED",
+    "13_fedramp": "MEASURED",
+    "14_pci_dss": "MEASURED",
+    "15_iso27001": "MEASURED",
+    "16_mitre_attack_mapping": "MEASURED",
+    "17_ml_trl_readiness": "MEASURED",
+    "00_shape_k_graphrag": "PASS"
+  },
+  "failures": [],
+  "independent_facts": {
+    "total_files_in_tree": 448,
+    "total_loc": 135597,
+    "primary_language": "Rust",
+    "head_sha": "45bbb16542f1",
+    "head_date": "2026-10-05T15:13:44+02:00",
+    "remote_url": "https://github.com/quickwit-oss/tantivy",
+    "sbom_components": 64,
+    "declared_packages": 214,
+    "trl_level": 4,
+    "licence_file": "LICENSE",
+    "licence_sha256_16": "acacd14bebbffdb3"
+  },
+  "project_fingerprint_sha256": "ceff94c770dcebf051001432c94cb928671c5457df692a7e0c89ca7ded3379df",
+  "fingerprint_note": "sha256 of this project's own measured body with its own name and category normalised out; identical fingerprints between two projects would mean templated data"
+}
