@@ -1,0 +1,676 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:fc6fc5fd-d6f3-58f5-9324-e493a138151f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T17:10:47Z",
+    "component": {
+      "type": "application",
+      "name": "TANTIVY",
+      "version": "45bbb16542f1",
+      "bom-ref": "pkg:generic/anticloud/TANTIVY@45bbb16542f1",
+      "purl": "pkg:generic/anticloud/TANTIVY@45bbb16542f1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "45bbb16542f157a099585bc988ce7f06e7b4fd5a"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/quickwit-oss/tantivy"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "name",
+      "version": "tantivy",
+      "purl": "pkg:cargo/name@tantivy",
+      "bom-ref": "cargo/name@tantivy"
+    },
+    {
+      "type": "library",
+      "name": "version",
+      "version": "0.27.0",
+      "purl": "pkg:cargo/version@0.27.0",
+      "bom-ref": "cargo/version@0.27.0"
+    },
+    {
+      "type": "library",
+      "name": "license",
+      "version": "MIT",
+      "purl": "pkg:cargo/license@MIT",
+      "bom-ref": "cargo/license@MIT"
+    },
+    {
+      "type": "library",
+      "name": "documentation",
+      "version": "https://docs.rs/tantivy/",
+      "purl": "pkg:cargo/documentation@https://docs.rs/tantivy/",
+      "bom-ref": "cargo/documentation@https://docs.rs/tantivy/"
+    },
+    {
+      "type": "library",
+      "name": "homepage",
+      "version": "https://github.com/quickwit-oss/tantivy",
+      "purl": "pkg:cargo/homepage@https://github.com/quickwit-oss/tantivy",
+      "bom-ref": "cargo/homepage@https://github.com/quickwit-oss/tantivy"
+    },
+    {
+      "type": "library",
+      "name": "repository",
+      "version": "https://github.com/quickwit-oss/tantivy",
+      "purl": "pkg:cargo/repository@https://github.com/quickwit-oss/tantivy",
+      "bom-ref": "cargo/repository@https://github.com/quickwit-oss/tantivy"
+    },
+    {
+      "type": "library",
+      "name": "readme",
+      "version": "README.md",
+      "purl": "pkg:cargo/readme@README.md",
+      "bom-ref": "cargo/readme@README.md"
+    },
+    {
+      "type": "library",
+      "name": "edition",
+      "version": "2021",
+      "purl": "pkg:cargo/edition@2021",
+      "bom-ref": "cargo/edition@2021"
+    },
+    {
+      "type": "library",
+      "name": "rust-version",
+      "version": "1.87",
+      "purl": "pkg:cargo/rust-version@1.87",
+      "bom-ref": "cargo/rust-version@1.87"
+    },
+    {
+      "type": "library",
+      "name": "oneshot",
+      "version": "0.1.13",
+      "purl": "pkg:cargo/oneshot@0.1.13",
+      "bom-ref": "cargo/oneshot@0.1.13"
+    },
+    {
+      "type": "library",
+      "name": "base64",
+      "version": "0.23.0",
+      "purl": "pkg:cargo/base64@0.23.0",
+      "bom-ref": "cargo/base64@0.23.0"
+    },
+    {
+      "type": "library",
+      "name": "byteorder",
+      "version": "1.4.3",
+      "purl": "pkg:cargo/byteorder@1.4.3",
+      "bom-ref": "cargo/byteorder@1.4.3"
+    },
+    {
+      "type": "library",
+      "name": "crc32fast",
+      "version": "1.3.2",
+      "purl": "pkg:cargo/crc32fast@1.3.2",
+      "bom-ref": "cargo/crc32fast@1.3.2"
+    },
+    {
+      "type": "library",
+      "name": "once_cell",
+      "version": "1.10.0",
+      "purl": "pkg:cargo/once_cell@1.10.0",
+      "bom-ref": "cargo/once_cell@1.10.0"
+    },
+    {
+      "type": "library",
+      "name": "regex",
+      "version": "1.5.5",
+      "purl": "pkg:cargo/regex@1.5.5",
+      "bom-ref": "cargo/regex@1.5.5"
+    },
+    {
+      "type": "library",
+      "name": "aho-corasick",
+      "version": "1.0",
+      "purl": "pkg:cargo/aho-corasick@1.0",
+      "bom-ref": "cargo/aho-corasick@1.0"
+    },
+    {
+      "type": "library",
+      "name": "tantivy-fst",
+      "version": "0.5",
+      "purl": "pkg:cargo/tantivy-fst@0.5",
+      "bom-ref": "cargo/tantivy-fst@0.5"
+    },
+    {
+      "type": "library",
+      "name": "memmap2",
+      "version": "0.9.0",
+      "purl": "pkg:cargo/memmap2@0.9.0",
+      "bom-ref": "cargo/memmap2@0.9.0"
+    },
+    {
+      "type": "library",
+      "name": "lz4_flex",
+      "version": "0.14",
+      "purl": "pkg:cargo/lz4_flex@0.14",
+      "bom-ref": "cargo/lz4_flex@0.14"
+    },
+    {
+      "type": "library",
+      "name": "zstd",
+      "version": "0.14",
+      "purl": "pkg:cargo/zstd@0.14",
+      "bom-ref": "cargo/zstd@0.14"
+    },
+    {
+      "type": "library",
+      "name": "tempfile",
+      "version": "3.12.0",
+      "purl": "pkg:cargo/tempfile@3.12.0",
+      "bom-ref": "cargo/tempfile@3.12.0"
+    },
+    {
+      "type": "library",
+      "name": "log",
+      "version": "0.4.16",
+      "purl": "pkg:cargo/log@0.4.16",
+      "bom-ref": "cargo/log@0.4.16"
+    },
+    {
+      "type": "library",
+      "name": "serde",
+      "version": "1.0.219",
+      "purl": "pkg:cargo/serde@1.0.219",
+      "bom-ref": "cargo/serde@1.0.219"
+    },
+    {
+      "type": "library",
+      "name": "serde_json",
+      "version": "1.0.140",
+      "purl": "pkg:cargo/serde_json@1.0.140",
+      "bom-ref": "cargo/serde_json@1.0.140"
+    },
+    {
+      "type": "library",
+      "name": "fs4",
+      "version": "0.13.1",
+      "purl": "pkg:cargo/fs4@0.13.1",
+      "bom-ref": "cargo/fs4@0.13.1"
+    },
+    {
+      "type": "library",
+      "name": "levenshtein_automata",
+      "version": "0.2.1",
+      "purl": "pkg:cargo/levenshtein_automata@0.2.1",
+      "bom-ref": "cargo/levenshtein_automata@0.2.1"
+    },
+    {
+      "type": "library",
+      "name": "uuid",
+      "version": "1.0.0",
+      "purl": "pkg:cargo/uuid@1.0.0",
+      "bom-ref": "cargo/uuid@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "crossbeam-channel",
+      "version": "0.5.4",
+      "purl": "pkg:cargo/crossbeam-channel@0.5.4",
+      "bom-ref": "cargo/crossbeam-channel@0.5.4"
+    },
+    {
+      "type": "library",
+      "name": "frostem",
+      "version": "1.20260804.0",
+      "purl": "pkg:cargo/frostem@1.20260804.0",
+      "bom-ref": "cargo/frostem@1.20260804.0"
+    },
+    {
+      "type": "library",
+      "name": "downcast-rs",
+      "version": "2.0.1",
+      "purl": "pkg:cargo/downcast-rs@2.0.1",
+      "bom-ref": "cargo/downcast-rs@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "bitpacking",
+      "version": "0.9.3",
+      "purl": "pkg:cargo/bitpacking@0.9.3",
+      "bom-ref": "cargo/bitpacking@0.9.3"
+    },
+    {
+      "type": "library",
+      "name": "census",
+      "version": "0.4.2",
+      "purl": "pkg:cargo/census@0.4.2",
+      "bom-ref": "cargo/census@0.4.2"
+    },
+    {
+      "type": "library",
+      "name": "rustc-hash",
+      "version": "2.0.0",
+      "purl": "pkg:cargo/rustc-hash@2.0.0",
+      "bom-ref": "cargo/rustc-hash@2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "thiserror",
+      "version": "2.0.1",
+      "purl": "pkg:cargo/thiserror@2.0.1",
+      "bom-ref": "cargo/thiserror@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "htmlescape",
+      "version": "0.3.1",
+      "purl": "pkg:cargo/htmlescape@0.3.1",
+      "bom-ref": "cargo/htmlescape@0.3.1"
+    },
+    {
+      "type": "library",
+      "name": "fail",
+      "version": "0.5.0",
+      "purl": "pkg:cargo/fail@0.5.0",
+      "bom-ref": "cargo/fail@0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "time",
+      "version": "0.3.47",
+      "purl": "pkg:cargo/time@0.3.47",
+      "bom-ref": "cargo/time@0.3.47"
+    },
+    {
+      "type": "library",
+      "name": "smallvec",
+      "version": "1.8.0",
+      "purl": "pkg:cargo/smallvec@1.8.0",
+      "bom-ref": "cargo/smallvec@1.8.0"
+    },
+    {
+      "type": "library",
+      "name": "rayon",
+      "version": "1.5.2",
+      "purl": "pkg:cargo/rayon@1.5.2",
+      "bom-ref": "cargo/rayon@1.5.2"
+    },
+    {
+      "type": "library",
+      "name": "lru",
+      "version": "0.18.2",
+      "purl": "pkg:cargo/lru@0.18.2",
+      "bom-ref": "cargo/lru@0.18.2"
+    },
+    {
+      "type": "library",
+      "name": "fastdivide",
+      "version": "0.4.0",
+      "purl": "pkg:cargo/fastdivide@0.4.0",
+      "bom-ref": "cargo/fastdivide@0.4.0"
+    },
+    {
+      "type": "library",
+      "name": "itertools",
+      "version": "0.14.0",
+      "purl": "pkg:cargo/itertools@0.14.0",
+      "bom-ref": "cargo/itertools@0.14.0"
+    },
+    {
+      "type": "library",
+      "name": "measure_time",
+      "version": "0.9.0",
+      "purl": "pkg:cargo/measure_time@0.9.0",
+      "bom-ref": "cargo/measure_time@0.9.0"
+    },
+    {
+      "type": "library",
+      "name": "arc-swap",
+      "version": "1.5.0",
+      "purl": "pkg:cargo/arc-swap@1.5.0",
+      "bom-ref": "cargo/arc-swap@1.5.0"
+    },
+    {
+      "type": "library",
+      "name": "bon",
+      "version": "3.3.1",
+      "purl": "pkg:cargo/bon@3.3.1",
+      "bom-ref": "cargo/bon@3.3.1"
+    },
+    {
+      "type": "library",
+      "name": "jitexpr",
+      "version": "0.1",
+      "purl": "pkg:cargo/jitexpr@0.1",
+      "bom-ref": "cargo/jitexpr@0.1"
+    },
+    {
+      "type": "library",
+      "name": "columnar",
+      "version": "0.7",
+      "purl": "pkg:cargo/columnar@0.7",
+      "bom-ref": "cargo/columnar@0.7"
+    },
+    {
+      "type": "library",
+      "name": "sstable",
+      "version": "0.7",
+      "purl": "pkg:cargo/sstable@0.7",
+      "bom-ref": "cargo/sstable@0.7"
+    },
+    {
+      "type": "library",
+      "name": "stacker",
+      "version": "0.7",
+      "purl": "pkg:cargo/stacker@0.7",
+      "bom-ref": "cargo/stacker@0.7"
+    },
+    {
+      "type": "library",
+      "name": "query-grammar",
+      "version": "0.26.0",
+      "purl": "pkg:cargo/query-grammar@0.26.0",
+      "bom-ref": "cargo/query-grammar@0.26.0"
+    },
+    {
+      "type": "library",
+      "name": "tantivy-bitpacker",
+      "version": "0.10",
+      "purl": "pkg:cargo/tantivy-bitpacker@0.10",
+      "bom-ref": "cargo/tantivy-bitpacker@0.10"
+    },
+    {
+      "type": "library",
+      "name": "common",
+      "version": "0.11",
+      "purl": "pkg:cargo/common@0.11",
+      "bom-ref": "cargo/common@0.11"
+    },
+    {
+      "type": "library",
+      "name": "tokenizer-api",
+      "version": "0.7",
+      "purl": "pkg:cargo/tokenizer-api@0.7",
+      "bom-ref": "cargo/tokenizer-api@0.7"
+    },
+    {
+      "type": "library",
+      "name": "sketches-ddsketch",
+      "version": "0.4",
+      "purl": "pkg:cargo/sketches-ddsketch@0.4",
+      "bom-ref": "cargo/sketches-ddsketch@0.4"
+    },
+    {
+      "type": "library",
+      "name": "datasketches",
+      "version": "0.5.0",
+      "purl": "pkg:cargo/datasketches@0.5.0",
+      "bom-ref": "cargo/datasketches@0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "futures-util",
+      "version": "0.3.28",
+      "purl": "pkg:cargo/futures-util@0.3.28",
+      "bom-ref": "cargo/futures-util@0.3.28"
+    },
+    {
+      "type": "library",
+      "name": "futures-channel",
+      "version": "0.3.28",
+      "purl": "pkg:cargo/futures-channel@0.3.28",
+      "bom-ref": "cargo/futures-channel@0.3.28"
+    },
+    {
+      "type": "library",
+      "name": "fnv",
+      "version": "1.0.7",
+      "purl": "pkg:cargo/fnv@1.0.7",
+      "bom-ref": "cargo/fnv@1.0.7"
+    },
+    {
+      "type": "library",
+      "name": "typetag",
+      "version": "0.2.21",
+      "purl": "pkg:cargo/typetag@0.2.21",
+      "bom-ref": "cargo/typetag@0.2.21"
+    },
+    {
+      "type": "library",
+      "name": "unwrap-infallible",
+      "version": "1.0.0",
+      "purl": "pkg:cargo/unwrap-infallible@1.0.0",
+      "bom-ref": "cargo/unwrap-infallible@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "serde-tuple-vec-map",
+      "version": "1.0.1",
+      "purl": "pkg:cargo/serde-tuple-vec-map@1.0.1",
+      "bom-ref": "cargo/serde-tuple-vec-map@1.0.1"
+    },
+    {
+      "type": "library",
+      "name": "winapi",
+      "version": "0.3.9",
+      "purl": "pkg:cargo/winapi@0.3.9",
+      "bom-ref": "cargo/winapi@0.3.9"
+    },
+    {
+      "type": "library",
+      "name": "binggan",
+      "version": "0.17.0",
+      "purl": "pkg:cargo/binggan@0.17.0",
+      "bom-ref": "cargo/binggan@0.17.0"
+    },
+    {
+      "type": "library",
+      "name": "rand",
+      "version": "0.9",
+      "purl": "pkg:cargo/rand@0.9",
+      "bom-ref": "cargo/rand@0.9"
+    },
+    {
+      "type": "library",
+      "name": "maplit",
+      "version": "1.0.2",
+      "purl": "pkg:cargo/maplit@1.0.2",
+      "bom-ref": "cargo/maplit@1.0.2"
+    },
+    {
+      "type": "library",
+      "name": "matches",
+      "version": "0.1.9",
+      "purl": "pkg:cargo/matches@0.1.9",
+      "bom-ref": "cargo/matches@0.1.9"
+    },
+    {
+      "type": "library",
+      "name": "pretty_assertions",
+      "version": "1.2.1",
+      "purl": "pkg:cargo/pretty_assertions@1.2.1",
+      "bom-ref": "cargo/pretty_assertions@1.2.1"
+    },
+    {
+      "type": "library",
+      "name": "proptest",
+      "version": "1.7.0",
+      "purl": "pkg:cargo/proptest@1.7.0",
+      "bom-ref": "cargo/proptest@1.7.0"
+    },
+    {
+      "type": "library",
+      "name": "test-log",
+      "version": "0.2.10",
+      "purl": "pkg:cargo/test-log@0.2.10",
+      "bom-ref": "cargo/test-log@0.2.10"
+    },
+    {
+      "type": "library",
+      "name": "futures",
+      "version": "0.3.21",
+      "purl": "pkg:cargo/futures@0.3.21",
+      "bom-ref": "cargo/futures@0.3.21"
+    },
+    {
+      "type": "library",
+      "name": "paste",
+      "version": "1.0.11",
+      "purl": "pkg:cargo/paste@1.0.11",
+      "bom-ref": "cargo/paste@1.0.11"
+    },
+    {
+      "type": "library",
+      "name": "more-asserts",
+      "version": "0.3.1",
+      "purl": "pkg:cargo/more-asserts@0.3.1",
+      "bom-ref": "cargo/more-asserts@0.3.1"
+    },
+    {
+      "type": "library",
+      "name": "rand_distr",
+      "version": "0.5",
+      "purl": "pkg:cargo/rand_distr@0.5",
+      "bom-ref": "cargo/rand_distr@0.5"
+    },
+    {
+      "type": "library",
+      "name": "postcard",
+      "version": "1.0.4",
+      "purl": "pkg:cargo/postcard@1.0.4",
+      "bom-ref": "cargo/postcard@1.0.4"
+    },
+    {
+      "type": "library",
+      "name": "criterion",
+      "version": "0.8",
+      "purl": "pkg:cargo/criterion@0.8",
+      "bom-ref": "cargo/criterion@0.8"
+    },
+    {
+      "type": "library",
+      "name": "path",
+      "version": "tests/failpoints/mod.rs",
+      "purl": "pkg:cargo/path@tests/failpoints/mod.rs",
+      "bom-ref": "cargo/path@tests/failpoints/mod.rs"
+    },
+    {
+      "type": "library",
+      "name": "description",
+      "version": "column oriented storage for tantivy",
+      "purl": "pkg:cargo/description@column oriented storage for tantivy",
+      "bom-ref": "cargo/description@column oriented storage for tantivy"
+    },
+    {
+      "type": "library",
+      "name": "ownedbytes",
+      "version": "0.9",
+      "purl": "pkg:cargo/ownedbytes@0.9",
+      "bom-ref": "cargo/ownedbytes@0.9"
+    },
+    {
+      "type": "library",
+      "name": "async-trait",
+      "version": "0.1",
+      "purl": "pkg:cargo/async-trait@0.1",
+      "bom-ref": "cargo/async-trait@0.1"
+    },
+    {
+      "type": "library",
+      "name": "cranelift",
+      "version": "0.134.3",
+      "purl": "pkg:cargo/cranelift@0.134.3",
+      "bom-ref": "cargo/cranelift@0.134.3"
+    },
+    {
+      "type": "library",
+      "name": "cranelift-jit",
+      "version": "0.134.3",
+      "purl": "pkg:cargo/cranelift-jit@0.134.3",
+      "bom-ref": "cargo/cranelift-jit@0.134.3"
+    },
+    {
+      "type": "library",
+      "name": "cranelift-module",
+      "version": "0.134.3",
+      "purl": "pkg:cargo/cranelift-module@0.134.3",
+      "bom-ref": "cargo/cranelift-module@0.134.3"
+    },
+    {
+      "type": "library",
+      "name": "cranelift-native",
+      "version": "0.134.3",
+      "purl": "pkg:cargo/cranelift-native@0.134.3",
+      "bom-ref": "cargo/cranelift-native@0.134.3"
+    },
+    {
+      "type": "library",
+      "name": "stable_deref_trait",
+      "version": "1.2.0",
+      "purl": "pkg:cargo/stable_deref_trait@1.2.0",
+      "bom-ref": "cargo/stable_deref_trait@1.2.0"
+    },
+    {
+      "type": "library",
+      "name": "nom",
+      "version": "7",
+      "purl": "pkg:cargo/nom@7",
+      "bom-ref": "cargo/nom@7"
+    },
+    {
+      "type": "library",
+      "name": "ordered-float",
+      "version": "5.0.0",
+      "purl": "pkg:cargo/ordered-float@5.0.0",
+      "bom-ref": "cargo/ordered-float@5.0.0"
+    },
+    {
+      "type": "library",
+      "name": "names",
+      "version": "0.14",
+      "purl": "pkg:cargo/names@0.14",
+      "bom-ref": "cargo/names@0.14"
+    },
+    {
+      "type": "library",
+      "name": "murmurhash32",
+      "version": "0.4",
+      "purl": "pkg:cargo/murmurhash32@0.4",
+      "bom-ref": "cargo/murmurhash32@0.4"
+    },
+    {
+      "type": "library",
+      "name": "ahash",
+      "version": "0.8.11",
+      "purl": "pkg:cargo/ahash@0.8.11",
+      "bom-ref": "cargo/ahash@0.8.11"
+    },
+    {
+      "type": "library",
+      "name": "zipf",
+      "version": "7.0.0",
+      "purl": "pkg:cargo/zipf@7.0.0",
+      "bom-ref": "cargo/zipf@7.0.0"
+    },
+    {
+      "type": "library",
+      "name": "tantivy-stacker",
+      "version": "0.2.0",
+      "purl": "pkg:cargo/tantivy-stacker@0.2.0",
+      "bom-ref": "cargo/tantivy-stacker@0.2.0"
+    }
+  ]
+}
